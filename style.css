@@ -1,0 +1,296 @@
+html,body,.parent{
+    overflow-x: hidden;
+    width: 100vw;
+    min-width: 100vw;
+}
+.parent{
+    background-color: rgba(224, 255, 255, 0.356);
+    width: 100vw;
+}
+
+.header{
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small_card_img_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button{
+    background-color: rgba(12, 12, 209, 0.877);
+  border: none;
+  color: white;
+  padding: 11px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 50px;
+  border-radius: 12px;
+}
+
+.middle-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingFooter{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footerParent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    border-radius: 18px;
+    width: 80%;
+    min-width: 70%;
+    background-color: blue;
+    margin-top: 14rem;
+}
+
+.authorName{
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+
+.small_card_img_container>img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.heading{
+    font-weight: 700;
+    font-size: 30px;
+    flex:1;
+}
+
+.middlecontainer>p{
+font-weight: 600;
+font-size: 16px;
+flex:1;
+}
+
+.middlecontainer{
+    flex:1;
+    /* min-width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchbarContainer{
+    flex: 1;   
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+
+.searchbarContainer>input{
+    border: none !important;
+    border-radius: 6px;
+    background-color: rgba(211, 211, 211, 0.589);
+    height: 29px;
+    padding:3px 9px !important;
+}
+
+.bluColor{
+    color: rgb(59 59 255);
+}
+
+.bigText{
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.lightText>p{
+    color: #484848d9;
+    font-size: 22px;
+
+}
+
+.lightText{
+    margin-top: 28px;
+    text-align: center;
+}
+
+
+.header2{
+    display: none !important;
+    
+}
+
+.shadowCard{
+    width: 465px;
+    border-radius: 22px;
+    background-color: white;
+    height: 285px;
+    box-shadow: 0 0 29px 0 rgb(28 31 41 / 40%);
+    display: flex;
+}
+.center{
+    
+    margin-left: 60px;
+
+justify-content: center;
+align-content: center;
+
+
+}
+
+.cardContainer{
+    position: absolute;
+    right: 170px;
+    bottom: -17px;
+}
+
+
+
+.imageContainer{
+    max-width: 600px;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.imageDiv{
+    position: relative;
+}
+
+
+.imageContainer>img{
+    box-shadow: 0 0 29px 0 rgba(28, 31, 41, 0.404);
+    max-width: 600px;
+    object-fit: cover;
+    width: 100%;
+    margin-left: 124px;
+    border-radius: 22px;
+}
+
+.small_card{
+    min-width: 210px;
+    width: 100%;
+    flex: 1;
+}
+.head{
+    color: rgba(20, 20, 110, 0.993);
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    
+}
+.sub-head{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 18px;
+}
+.paragraph>p{
+    font-size: 16px;
+    margin: 0px;
+}
+.paragraph{
+    margin-top: 20px;
+}
+
+
+.icons-container{
+    padding-right: 5rem;
+    display: flex;
+    bottom: -5rem;
+    right: 12rem;
+ 
+    position: absolute;
+    flex-direction: row-reverse;
+ 
+}
+
+.icons-container>img{
+
+    width: 30px;
+    object-fit: cover;
+    height:30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .header2{
+        display: inline !important;
+        display: flex !important;
+        justify-content: space-between;
+        align-content: center;
+        margin-top: 25px;
+    }
+
+    .header{
+        display: none;
+    }
+
+    .imageContainer>img{
+        margin-left: 0px;
+    }
+
+    .cardContainer{
+        right: 28px !important;
+        bottom: -173px !important;
+        position: absolute;
+    }
+
+    .footer{
+        border-radius: 18px;
+        width: 90%;
+        min-width: 90%;
+        background-color: blue;
+        margin-top: 17rem;
+    }
+
+    .small_card{
+        min-width: 201px;
+    }
+
+    .icons-container{
+        padding-right: 5rem;
+        display: flex;
+        bottom: -15rem;
+        right: 6rem;
+     
+        position: absolute;
+        flex-direction: row-reverse;
+     
+    }
+    .heading1{
+        font-weight: 700 ;
+         font-size: 30px ;
+    }
+    
+}
